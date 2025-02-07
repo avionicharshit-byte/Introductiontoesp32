@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+  <style>
+    .reveal section img { background: none; border: none; box-shadow: none; }
+    .custom-title { color: #4a9eff; }
+    .feature-list { list-style: none; }
+    .feature-list li { margin: 15px 0; }
+    .feature-list li::before { content: "✓"; color: #4a9eff; margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Title Slide -->
+      <section>
+        <h1 class="custom-title">ESP32 and Arduino IoT Cloud</h1>
+        <h3>Introduction to IoT Development</h3>
+      </section>
+
+      <!-- ESP32 Introduction -->
+      <section>
+        <h2>What is ESP32?</h2>
+        <ul class="feature-list">
+          <li>32-bit Dual-Core Processor</li>
+          <li>Built-in WiFi & Bluetooth</li>
+          <li>Perfect for IoT Projects</li>
+          <li>Faster than Arduino Uno</li>
+        </ul>
+      </section>
+
+      <!-- Sensors -->
+      <section>
+        <h2>Innovation Kit Sensors</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div>
+            <h3>Data Collection</h3>
+            <ul class="feature-list">
+              <li>DHT11 Temperature & Humidity</li>
+              <li>LDR Light Sensor</li>
+              <li>Rain Drop Sensor</li>
+              <li>MQ-2 Gas Sensor</li>
+            </ul>
+          </div>
+          <div>
+            <svg viewBox="0 0 200 200" style="width: 200px;">
+              <rect x="40" y="40" width="120" height="120" fill="#4a9eff" rx="10"/>
+              <circle cx="100" cy="100" r="30" fill="#fff"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Arduino Cloud -->
+      <section>
+        <h2>Arduino IoT Cloud</h2>
+        <ul class="feature-list">
+          <li>Remote Device Management</li>
+          <li>Real-time Data Monitoring</li>
+          <li>Mobile App Control</li>
+          <li>Easy Automation</li>
+        </ul>
+      </section>
+
+      <!-- Arduino Agent -->
+      <section>
+        <h2>Setting Up Arduino Agent</h2>
+        <ol>
+          <li>Download Arduino Create Agent</li>
+          <li>Install on your computer</li>
+          <li>Connect ESP32 board</li>
+          <li>Configure WiFi settings</li>
+        </ol>
+      </section>
+
+      <!-- Wiring -->
+      <section>
+        <h2>Connecting DHT11 to ESP32</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div>
+            <h3>Pin Connections</h3>
+            <ul>
+              <li>VCC → 3.3V</li>
+              <li>GND → GND</li>
+              <li>DATA → GPIO 4</li>
+            </ul>
+          </div>
+          <div>
+            <svg viewBox="0 0 200 200" style="width: 200px;">
+              <line x1="50" y1="100" x2="150" y2="100" stroke="#4a9eff" stroke-width="2"/>
+              <circle cx="50" cy="100" r="5" fill="#4a9eff"/>
+              <circle cx="150" cy="100" r="5" fill="#4a9eff"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Programming -->
+      <section>
+        <h2>Required Libraries</h2>
+        <ul class="feature-list">
+          <li>DHT Sensor Library</li>
+          <li>ArduinoIoTCloud</li>
+          <li>WiFiNINA</li>
+        </ul>
+      </section>
+
+      <!-- Dashboard -->
+      <section>
+        <h2>Creating IoT Dashboard</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <ul class="feature-list">
+            <li>Create new Thing</li>
+            <li>Add variables</li>
+            <li>Configure widgets</li>
+            <li>Set up visualization</li>
+          </ul>
+          <div style="background: #4a9eff33; padding: 20px; border-radius: 10px;">
+            Dashboard Preview
+          </div>
+        </div>
+      </section>
+
+      <!-- Mobile App -->
+      <section>
+        <h2>Arduino IoT Cloud Mobile App</h2>
+        <ul class="feature-list">
+          <li>📱 Real-time monitoring</li>
+          <li>🔔 Push notifications</li>
+          <li>📊 Data visualization</li>
+          <li>🎮 Remote control</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      controls: true,
+      progress: true,
+      center: true,
+      transition: 'slide'
+    });
+  </script>
+</body>
+</html>
